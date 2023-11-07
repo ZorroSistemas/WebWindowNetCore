@@ -1,29 +1,22 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
-            "name": ".NET Core Launch (Windows)",
-            "type": "coreclr",
+            "type": "chrome",
             "request": "launch",
-            "preLaunchTask": "build",
-            "program": "${workspaceFolder}/TestAppWindows/bin/Debug/net6.0-windows/win-x64/TestAppWindows.exe",
-            "args": [],
-            "cwd": "${workspaceFolder}",
-            "stopAtEntry": false,
-            "console": "internalConsole"
-        }, {
-            "name": ".NET Core Launch (Linux)",
-            "type": "coreclr",
+            "name": "Iniciar o Chrome em relação a localhost",
+            "url": "https://www.nfe.fazenda.gov.br/portal/consultaRecaptcha.aspx?tipoConsulta=resumo&tipoConteudo=7PhJ+gAVw2g=",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "node",
             "request": "launch",
-            "preLaunchTask": "build",
-            "program": "${workspaceFolder}/TestApp/bin/Debug/net6.0/linux-x64/TestApp.dll",
-            "args": [],
-            "cwd": "${workspaceFolder}",
-            "stopAtEntry": false,
-            "console": "internalConsole"
+            "name": "Preencher",
+            "program": "${workspaceFolder}/preencher.js",
+            "cwd": "${workspaceFolder}"
         }
     ]
 }
